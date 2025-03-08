@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import AskQuestionForm from "@/components/ask-question-form"
+import AskQuestionForm from "@/components/custom/ask-question-form"
 import Link from "next/link"
 
 export const metadata: Metadata = {

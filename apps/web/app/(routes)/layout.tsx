@@ -1,5 +1,5 @@
-import Footer from '@/components/footer'
-import Header from '@/components/header'
+import Footer from '@/components/custom/footer'
+import Header from '@/components/custom/navbar/header'
 import React from 'react'
 
 export default function layout({ children }: { children: React.ReactNode }) {

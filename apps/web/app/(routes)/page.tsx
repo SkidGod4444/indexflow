@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ArrowUpIcon as ArrowTrendingUp, Clock, FlameIcon as Fire, Search } from "lucide-react"
-import TagCloud from "@/components/tag-cloud"
-import QuestionCard from "@/components/question-card"
+import TagCloud from "@/components/custom/tag-cloud"
+import QuestionCard from "@/components/custom/question-card"
 import { useState } from 'react'
 
 export default function Home() {
@@ -297,7 +297,7 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="mt-8 flex justify-center absolute w-full">
+          <div className="mt-8 flex justify-center absolute bottom-0 w-full">
             <div className="flex gap-2">
               <Button variant="outline" size="sm" onClick={handlePrevious} disabled={currentPage === 1}>
                 Previous
@@ -330,7 +330,7 @@ export default function Home() {
                 <div key={community.id} className="flex items-center py-2">
                   <img src={community.img} alt={community.name} className="w-10 h-10 rounded-full mr-4" />
                   <div className="flex-1">
-                    <h3 className="text-md font-medium">{community.name}</h3>
+                    <h3 className="text-md font-medium truncate max-w-[12ch] overflow-hidden whitespace-nowrap">{community.name}</h3>
                     <p className="text-xs text-muted-foreground">{community.description}</p>
                   </div>
                   <Button className="ml-4" variant={"default"}>Join</Button>

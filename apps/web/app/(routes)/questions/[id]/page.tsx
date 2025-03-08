@@ -3,10 +3,9 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { ArrowBigUp, ArrowBigDown, CheckCircle2, Bookmark, Share } from "lucide-react"
 import Link from "next/link"
-import AnswerForm from "@/components/answer-form"
+import AnswerForm from "@/components/custom/answer-form"
 import type { Metadata } from "next"
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export async function generateMetadata(): Promise<Metadata> {
   const question = {
     title: "How do I implement authentication with Next.js and NextAuth?",
