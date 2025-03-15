@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@iflow/auth": "workspace:*",
+    "@iflow/api": "workspace:*",
     "@iflow/types": "workspace:*",
     "@radix-ui/react-alert-dialog": "^1.1.6",
     "@radix-ui/react-avatar": "^1.1.3",
